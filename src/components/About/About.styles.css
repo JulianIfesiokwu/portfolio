@@ -1,0 +1,9 @@
+.about {
+    background-image: url(../../assets/background-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    height: 80vh;
+}

@@ -3,6 +3,7 @@ import styled from "styled-components"
 import './Header.styles.css'
 
 const Navigation = styled.header`
+    padding: 0 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,24 +36,25 @@ const HamburgerBtn = styled.div`
     transition: all 5s ease-in-out;
     `
 
-const Header = () => {
-    // let menuOpen = false
+const Header = (e) => {
+    let menuOpen = false
 
-    // const toggleMenu = (e) => {
-    //     if(!menuOpen) { 
-    //         HamburgerContainer.classlist.add('open') 
-    //         menuOpen = true
-    //     } else {
-    //         HamburgerContainer.classlist.remove('open');
-    //         menuOpen = false;
-    //     }
-    //     console.log(e.target)
-    // }
+    const toggleMenu = (e) => {
+        e.stopPropagation()
+        if(!menuOpen) { 
+            e.target.classlist.add('open') 
+            menuOpen = true
+        } else {
+            e.target.classlist.remove('open');
+            menuOpen = false;
+        }
+        
+    }
 
     return (
         <Navigation>
             <Title>{'<devjulian>'}</Title>
-            <HamburgerContainer >
+            <HamburgerContainer onClick={(e) => toggleMenu(e)}>
                 <HamburgerBtn className="hamburger-btn" />
             </HamburgerContainer>
         </Navigation>

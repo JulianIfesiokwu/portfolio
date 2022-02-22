@@ -2,9 +2,11 @@ import './App.css';
 import styled from 'styled-components';
 import Header from './components/Header/Header.component';
 import Main from './components/Main/Main.component';
+import Footer from './components/Footer/Footer.component';
 
 const Container = styled.div`
-  padding: 0 3rem`
+  padding: 0
+  `
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Container>
         <Header />
         <Main />
+        <Footer />
 
       </Container>
 

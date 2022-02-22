@@ -9,6 +9,7 @@ const LandingContainer = styled.section`
     align-items: center;
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 2rem;
     `
 
 const ImageContainer = styled.div`
