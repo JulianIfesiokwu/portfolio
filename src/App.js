@@ -1,23 +1,9 @@
-import './App.css';
-import styled from 'styled-components';
-import Header from './components/Header/Header.component';
-import Main from './components/Main/Main.component';
-import Footer from './components/Footer/Footer.component';
-
-const Container = styled.div`
-  padding: 0
-  `
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Container>
-        <Header />
-        <Main />
-        <Footer />
-
-      </Container>
-
+      <h1>helloe worlde</h1>
     </div>
   );
 }
